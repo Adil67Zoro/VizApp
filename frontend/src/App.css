@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0; /* Background color for the whole page */
+}
+
+#root {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh; /* Ensures the background color covers the entire viewport height */
+}
+  
+  
+
+  

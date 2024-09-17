@@ -1,0 +1,85 @@
+.sqr_style_transparent{
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-content: center;
+    border-width: 2px;
+    border-color: black;
+}
+
+.sqr_style_black{
+    width: var(--width);
+    height: var(--height); 
+    background-color: #769656;
+    display: grid;
+    place-content: center;
+}
+
+.sqr_style_white{
+    width: var(--width);
+    height: var(--height); 
+    background-color: #EEEED2;
+    display: grid;
+    place-content: center;
+}
+
+.sqr_style_sudoku{
+    width: var(--width);
+    height: var(--height); 
+    border-left-width: var(--left_w);
+    border-right-width: var(--right_w);
+    border-top-width: var(--top_w);
+    border-bottom-width: var(--bottom_w);
+    border-color: black;
+    display: grid;
+    place-content: center;
+    font-size: 70px;
+    user-select: none;
+}
+
+.red{
+    background-color: red;
+}
+
+.img_style{
+    width: 80px;
+    height: 80px;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.img_style:hover{
+    cursor: grab;
+}
+
+.img_style:active{
+    cursor: grabbing;
+}
+
+.hide{
+    background-color: black;
+}
+
+.highlight::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+.highlight_with_img::before{
+    content: " ";
+    position: absolute;
+    width: var(--highlight-size);
+    height: var(--highlight-size); 
+    border-radius: 50%; /* Make it a circle */
+    border: 5px solid rgba(77, 64, 93, 0.35); /* Border color and thickness */
+    background-color: transparent; /* Make the inside of the circle hollow */
+}
+
+.kingChecked{
+    background-color:red
+}

@@ -1,0 +1,154 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
+    font-size: 2em; 
+    text-align: center;
+}
+
+.success{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #000; /* Black border for more emphasis */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
+    font-size: 2em; /* Larger font size */
+    text-align: center;
+}
+
+.nextlevel{
+    transition: background-color 0.1s ease;
+}
+
+.nextlevel:hover{
+    color: red;
+}
+
+.option{
+    width: 110px;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 60px;
+    transition: background-color 0.1s ease;
+}
+
+.option:hover{
+    background-color: white;
+}
+
+
+.chessboard-container-one{
+    display: flex;
+    flex-direction: column;
+    border: 6px solid black;
+    margin-right: 100px;
+}
+
+.chessboard-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.displayedPieces{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.b4x4{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    width: 400px;
+    height: 400px;
+}  
+
+.b5x5{
+    display: grid;
+    grid-template-columns: repeat(5, 95px);
+    grid-template-rows: repeat(5, 95px);
+    width: 475px;
+    height: 475px;
+}
+
+.b6x6{
+    display: grid;
+    grid-template-columns: repeat(6, 90px);
+    grid-template-rows: repeat(6, 90px);
+    width: 540px;
+    height: 540px;
+}
+
+.b7x7{
+    display: grid;
+    grid-template-columns: repeat(7, 85px);
+    grid-template-rows: repeat(7, 85px);
+    width: 595px;
+    height: 595px;
+}
+
+.b8x8{
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    width: 640px;
+    height: 640px;
+}
+
+.restart {
+    padding: 10px 20px;
+    margin-left: 130px;
+    margin-right: 130px;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.restart:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+  
+.timer-restart-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    top: 20px;
+}
+  
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
